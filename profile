@@ -31,6 +31,10 @@ fi
 # see https://help.ubuntu.com/community/EnvironmentVariables                  #
 ###############################################################################
 
+###############################################################################
+# add man path into /etc/manpath.config or ~/.manpath, do not set MANPATH     #
+###############################################################################
+
 # for paraview 5.10.1
 if [ -d "${HOME}/opt/paraview-5.10.1" ] ; then
     export PATH="${PATH:+${PATH}:}${HOME}/opt/paraview-5.10.1/bin"
@@ -44,7 +48,6 @@ fi
 # for nvidia hpc sdk
 if [ -d "/usr/local/nvhpc" ] ; then
     export PATH="/usr/local/nvhpc/Linux_x86_64/22.7/compilers/bin${PATH:+:${PATH}}"
-    export MANPATH="/usr/local/nvhpc/Linux_x86_64/22.7/compilers/man${MANPATH:+:${MANPATH}}"
 fi
 
 # for vtk 9.2.0
