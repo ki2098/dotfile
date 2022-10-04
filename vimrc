@@ -6,3 +6,4 @@ set expandtab
 set backspace=2
 set autoindent
 set laststatus=2
+set cmdheight=2
