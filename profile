@@ -35,11 +35,6 @@ fi
 # add man path into /etc/manpath.config or ~/.manpath, do not set MANPATH     #
 ###############################################################################
 
-# for paraview 5.10.1
-if [ -d "${HOME}/opt/paraview-5.10.1" ] ; then
-    export PATH="${PATH:+${PATH}:}${HOME}/opt/paraview-5.10.1/bin"
-fi
-
 # for cuda 11.4
 if [ -d "/usr/local/cuda-11.7" ] ; then
     export PATH="/usr/local/cuda-11.7/bin${PATH:+:${PATH}}"
@@ -53,4 +48,19 @@ fi
 # for vtk 9.2.0
 if [ -d "/usr/local/vtk-9.2.0" ] ; then
     export PATH="/usr/local/vtk-9.2.0/bin${PATH:+:${PATH}}"
+fi
+
+# for paraview 5.10.1
+if [ -d "${HOME}/opt/paraview-5.10.1" ] ; then
+    export PATH="${PATH:+${PATH}:}${HOME}/opt/paraview-5.10.1/bin"
+fi
+
+# for krita
+if [ -d "${HOME}/opt/krita" ] ; then
+    export PATH="${PATH:+${PATH}:}${HOME}/opt/krita"
+fi
+
+# for blender
+if [ -d "${HOME}/opt/blender" ] ; then
+    export PATH="${PATH:+${PATH}:}${HOME}/opt/blender"
 fi
