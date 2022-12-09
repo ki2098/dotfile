@@ -1,3 +1,4 @@
+syntax on
 set number
 set title
 set tabstop=4
@@ -7,3 +8,4 @@ set backspace=2
 set autoindent
 set laststatus=2
 set cmdheight=2
+set mouse-=a
